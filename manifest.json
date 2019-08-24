@@ -63,6 +63,9 @@
     },
     "h5" : {
         "title" : "小泡泡",
-        "domain" : "wap.xiaopaopao.cn"
+        "domain" : "wap.xiaopaopao.cn",
+		"router":{  
+            "mode":"history"  
+        }  
     }
 }

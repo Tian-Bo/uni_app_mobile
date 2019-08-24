@@ -1,6 +1,4 @@
-<!-- 
-* 注册表单填写
-*  -->
+<!-- 注册 -->
 <template>
 <view class="register">
 	<view class="regis-head"><image src="../../static/images/xiaopaopao.png"></image></view>
@@ -49,80 +47,65 @@ export default {
 		// 跳转登录页
 		login() {
 			uni.navigateTo({
-				url: '/pages/login/login'
+				url: '/pages/login/index'
 			})
 		},
 		register() {
 			// 校验手机号
 			if (checkTel(this.tel)) {
-				uni.showModal({
-					title: '提示',
-					content: '请输入正确手机号',
-				})
+				uni.showModal({ content: '请输入正确手机号' })
 				return
 			}
 			// 校验密码
 			if (checkPassword(this.setPassword)) {
-				uni.showModal({
-					title: '提示',
-					content: '请输入6-18位包含字母和数字的密码',
-				})
+				uni.showModal({ content: '请输入6-18位包含字母和数字的密码' })
 				return
 			}
 			// 校验两次密码是否一致
 			if (this.setPassword !== this.affPassword) {
-				uni.showModal({
-					title: '提示',
-					content: '两次密码输入不一致',
-				})
+				uni.showModal({ content: '两次密码输入不一致' })
 				return
 			}
-			this.$uniRequest(
-				'/users/register',
-				{
-					data: {
-						username: this.tel,
-						password: this.setPassword,
-						tel: this.tel
-						
-					}
-				},
-				res => {
+			
+			let params = {
+				password: this.setPassword,
+				tel: this.tel
+			}
+			
+			this.$uniRequest('/user/register', { data: params, method: 'POST' }, res => {
+				try{
 					if (res.status === 0) {
-						uni.showModal({
-							title: '提示',
-							content: res.message,
-							success(res) {
-								if (res.confirm) {
-									// 存储token
-									
-									// 跳转到主页
-								}
-							}
-						})
+						uni.showModal({ content: res.message })
 					}
 				}
-			);
+				catch(e){
+					console.log(e)
+				}
+			})
 		}
 	}
 }
 </script>
 
 <style lang="scss">
-$height: 90upx;
-	
+$height: 90rpx;
+
+page {
+	background-color: $xpp-bg-color-00CCFF;
+}
+
 button{
 	line-height: $height;
 }	
 
 .register{
-	padding: 30upx;
+	padding: 30rpx;
 }
 // 头像
 .regis-head{
-	width: 200upx;
-	height: 200upx;
-	margin: 70upx auto;
+	width: 200rpx;
+	height: 200rpx;
+	margin: 70rpx auto;
 	overflow: hidden;
 	image{
 		width: 100%;
@@ -134,18 +117,18 @@ button{
 	display: flex;
 	align-items: center;
 	height: $height;
-	margin-bottom: 30upx;
+	margin-bottom: 30rpx;
 }
 .regis-item{
 	background-color: #fff;
-	border-radius: 5upx;
+	border-radius: 5rpx;
 	input{
 		width: 100%;
 		height: 100%;
 	}
 	i{
-		font-size: 48upx;
-		padding: 0 20upx;
+		font-size: 48rpx;
+		padding: 0 20rpx;
 	}
 }
 .regis-item-code{
@@ -155,15 +138,16 @@ button{
 		margin-bottom: 0;
 	}
 	button{
-		width: 300upx;
-		margin-left: 30upx;
+		width: 300rpx;
+		margin-left: 30rpx;
 		height: 100%;
 		line-height: $height;
-		border-radius: 5upx;
+		border-radius: 5rpx;
 	}
 }
 .regis-submit{
-	margin-top: 70upx;
-	margin-bottom: 30upx;
+	margin-top: 70rpx;
+	margin-bottom: 30rpx;
 }
 </style>
+

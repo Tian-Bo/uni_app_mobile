@@ -1,19 +1,19 @@
 {
 	"pages": [
 		{
-		    "path" : "pages/register/register",
-		    "style" : {
-				"navigationBarTitleText": "注册"
-			}
-		},
-		{
-		    "path" : "pages/login/login",
+		    "path" : "pages/login/index",
 		    "style" : {
 				"navigationBarTitleText": "登陆"
 			}
 		},
 		{
-		    "path" : "pages/noteLogin/noteLogin",
+		    "path" : "pages/register/index",
+		    "style" : {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+		    "path" : "pages/noteLogin/index",
 		    "style" : {
 				"navigationBarTitleText": "短信登陆"
 			}
@@ -25,31 +25,31 @@
 			}
 		},
         {
-            "path" : "pages/my/my",
+            "path" : "pages/my/index",
             "style" : {
 				"navigationBarTitleText": "我的"
 			}
         }
         ,{
-            "path" : "pages/discover/discover",
+            "path" : "pages/discover/index",
             "style" : {
 				"navigationBarTitleText": "发现"
 			}
         }
         ,{
-            "path" : "pages/classify/classify",
+            "path" : "pages/classify/index",
             "style" : {
 				"navigationBarTitleText": "分类"
 			}
         }
         ,{
-            "path" : "pages/findPassword/findPassword",
+            "path" : "pages/findPassword/index",
             "style" : {
 				"navigationBarTitleText": "找回密码"
 			}
         }
         ,{
-            "path" : "pages/personalData/personalData",
+            "path" : "pages/personalData/index",
             "style" : {
 				"navigationBarTitleText": "个人资料"
 			}
@@ -85,19 +85,19 @@
                 "text" : "首页"
             },
             {
-                "pagePath" : "pages/discover/discover",
+                "pagePath" : "pages/discover/index",
                 "iconPath" : "static/images/discover.png",
                 "selectedIconPath" : "static/images/discoverto.png",
                 "text" : "发现"
             },
             {
-                "pagePath" : "pages/classify/classify",
+                "pagePath" : "pages/classify/index",
                 "iconPath" : "static/images/classify.png",
                 "selectedIconPath" : "static/images/classifyto.png",
                 "text" : "分类"
             },
             {
-                "pagePath" : "pages/my/my",
+                "pagePath" : "pages/my/index",
                 "iconPath" : "static/images/my.png",
                 "selectedIconPath" : "static/images/myto.png",
                 "text" : "我的"
