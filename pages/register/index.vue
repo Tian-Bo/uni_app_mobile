@@ -88,7 +88,7 @@ export default {
 </script>
 
 <style lang="scss">
-$height: 90rpx;
+$height: 90upx;
 
 page {
 	background-color: $xpp-bg-color-00CCFF;
@@ -99,13 +99,13 @@ button{
 }	
 
 .register{
-	padding: 30rpx;
+	padding: 30upx;
 }
 // 头像
 .regis-head{
-	width: 200rpx;
-	height: 200rpx;
-	margin: 70rpx auto;
+	width: 200upx;
+	height: 200upx;
+	margin: 70upx auto;
 	overflow: hidden;
 	image{
 		width: 100%;
@@ -117,18 +117,18 @@ button{
 	display: flex;
 	align-items: center;
 	height: $height;
-	margin-bottom: 30rpx;
+	margin-bottom: 30upx;
 }
 .regis-item{
 	background-color: #fff;
-	border-radius: 5rpx;
+	border-radius: 5upx;
 	input{
 		width: 100%;
 		height: 100%;
 	}
 	i{
-		font-size: 48rpx;
-		padding: 0 20rpx;
+		font-size: 48upx;
+		padding: 0 20upx;
 	}
 }
 .regis-item-code{
@@ -138,16 +138,16 @@ button{
 		margin-bottom: 0;
 	}
 	button{
-		width: 300rpx;
-		margin-left: 30rpx;
+		width: 300upx;
+		margin-left: 30upx;
 		height: 100%;
 		line-height: $height;
-		border-radius: 5rpx;
+		border-radius: 5upx;
 	}
 }
 .regis-submit{
-	margin-top: 70rpx;
-	margin-bottom: 30rpx;
+	margin-top: 70upx;
+	margin-bottom: 30upx;
 }
 </style>
 

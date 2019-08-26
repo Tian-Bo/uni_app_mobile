@@ -107,7 +107,7 @@ export default {
 </script>
 
 <style lang="scss">
-$height: 90rpx;
+$height: 90upx;
 page {
 	background-color: #00ccff;
 }
@@ -116,49 +116,49 @@ button {
 }
 
 .login-logo {
-	width: 200rpx;
-	height: 200rpx;
+	width: 200upx;
+	height: 200upx;
 	margin: 0 auto;
-	padding: 70rpx 0;
+	padding: 70upx 0;
 	image {
 		width: 100%;
 		height: 100%;
 	}
 }
 .login-body {
-	padding: 0 70rpx;
+	padding: 0 70upx;
 	.login-body-item {
 		display: flex;
 		align-items: center;
 		flex-flow: wrap;
-		line-height: 110rpx;
+		line-height: 110upx;
 		@include border-bottom(0.5px, 100%, #999);
 		i {
-			font-size: 42rpx;
-			padding: 0 10rpx;
+			font-size: 42upx;
+			padding: 0 10upx;
 		}
 	}
 	.login-login {
-		margin-top: 70rpx;
+		margin-top: 70upx;
 	}
 	.login-hint {
-		padding: 0 10rpx;
+		padding: 0 10upx;
 		display: flex;
 		align-items: center;
 		flex-flow: wrap;
 		justify-content: space-between;
 		color: #007aff;
-		font-size: 28rpx;
-		margin-top: 15rpx;
+		font-size: 28upx;
+		margin-top: 15upx;
 	}
 }
 .login-way {
 	.login-way-title {
 		@include border-top(0.5px, 100%, #999, 50%);
 		.login-way-text {
-			font-size: 28rpx;
-			width: 320rpx;
-			margin: 70rpx auto;
+			font-size: 28upx;
+			width: 320upx;
+			margin: 70upx auto;
 			color: #666;
 			text-align: center;
 			background-color: $xpp-bg-color-00CCFF;
@@ -171,9 +171,9 @@ button {
 		align-items: center;
 		justify-content: center;
 		.login-way-item {
-			width: 120rpx;
-			height: 120rpx;
-			margin: 0 30rpx;
+			width: 120upx;
+			height: 120upx;
+			margin: 0 30upx;
 			image {
 				width: 100%;
 				height: 100%;
@@ -185,11 +185,11 @@ button {
 .login-popup {
 	button {
 		width: 98%;
-		margin: 5rpx auto;
+		margin: 5upx auto;
 		color: #007aff;
 	}
 	.login-popup-close {
-		margin-top: 20rpx;
+		margin-top: 20upx;
 	}
 }
 </style>

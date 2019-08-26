@@ -78,22 +78,22 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 50rpx 30rpx;
+		padding: 50upx 30upx;
 		background-color: #37BECE;
 		color: #fff;
-		font-size: 30rpx;
+		font-size: 30upx;
 		font-weight: 350;
 		.my-title-left{
 			display: flex;
 			align-items: center;
 		}
 		.my-head{
-			width: 150rpx;
-			height: 150rpx;
+			width: 150upx;
+			height: 150upx;
 			border-radius: 50%;
 			background-color: #eee;
 			overflow: hidden;
-			margin-right: 30rpx;
+			margin-right: 30upx;
 			image{
 				display: block;
 				width: 100%;
@@ -102,15 +102,15 @@ export default {
 	}
 	// 主体
 	.my-body-item{
-		height: 100rpx;
-		padding: 0 30rpx;
+		height: 100upx;
+		padding: 0 30upx;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #fff;
 		@include border-bottom(1px, 100%, #ccc);
 		i{
-			font-size: 46rpx;
+			font-size: 46upx;
 		}
 		.body-item-left,
 		.body-item-right{
@@ -125,13 +125,13 @@ export default {
 				color: #37BECE;
 			}
 			text{
-				margin-left: 15rpx;
-				font-size: 36rpx;
+				margin-left: 15upx;
+				font-size: 36upx;
 			}
 		}
 		.body-item-right{
 			text{
-				font-size: 30rpx;
+				font-size: 30upx;
 				color: #666;
 			}
 		}
